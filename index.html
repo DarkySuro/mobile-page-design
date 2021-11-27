@@ -5,62 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- header section  -->
-    <div class="header">
+    <div class="header-wrapper">
       <header>
         <nav>
-          <div class="logo">
-            <img src="./images/logo.png" alt="logo" />
-            <div class="company-name">
-              <div>Mobile</div>
-              <div>Shop</div>
+          <div class="logo-wrapper">
+            <div class="logo">
+              <i class="fas fa-mobile-alt"></i>
+              <span class="company-name">Adak Telecome</span>
             </div>
           </div>
           <div class="search-wrapper">
-            <div class="search">
-              <div class="icon"></div>
-              <div class="input">
-                <input
-                  type="text"
-                  name="search-box"
-                  id="search-box"
-                  placeholder="Name your wish..."
-                />
-              </div>
-              <span
-                class="clear"
-                onclick="document.getElementById('search-box').value = '' "
-              ></span>
+            <div class="search-box">
+              <input type="text" id="search" placeholder="Name your wish..." />
             </div>
           </div>
-          <ul class="horizontal-list">
-            <li><a href="#" aria-selected="false">Phones</a></li>
-            <li><a href="#" aria-selected="false">TV</a></li>
-            <li><a href="#" aria-selected="false">Dish</a></li>
-            <li><a href="#" aria-selected="false">Accessories</a></li>
-            <li><a href="#" aria-selected="false">Repair</a></li>
+          <ul class="menu">
+            <li class="links">
+              <a href="#" class="btn">Shop</a>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="">Mobile</a></li>
+                  <li><a href="">Laptop</a></li>
+                  <li><a href="">DTH</a></li>
+                  <li><a href="">TV</a></li>
+                  <li><a href="">accessories</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="links">
+              <a href="#" class="btn">Services</a>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="#" class="btn">Repair</a>
+                    <i class="fas fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">Laptop</a></li>
+                        <li><a href="">Desktop</a></li>
+                        <li><a href="">TV</a></li>
+                        <li><a href="">Watch</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn">Recharge</a>
+                    <i class="fas fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">DTH</a></li>
+                        <li><a href="">Broadband</a></li>
+                        <li><a href="">Electricity</a></li>
+                        <li><a href="">Others</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn">Money Transfer</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="links"><a href="#" class="btn">Contact</a></li>
           </ul>
-          <div class="profile">
-            <div class="profile-pic">
-              <img src="./images/person.png" alt="profile" />
+          <div class="profile-wrapper">
+            <div class="profile">
+              <img src="./images/person.png" alt="" />
+              <span class="profile-name">Surojit</span>
             </div>
-            <p class="profile-name">Surojit</p>
           </div>
         </nav>
+
+        <div class="span-wrapper">
+          <span
+            >All kind of Mobile, Internet, DishTV recharge and Online Money
+            Transfer is done here</span
+          >
+        </div>
       </header>
     </div>
     <!-- end header section -->
 
-    <!-- banner section -->
-    <div class="container">
-      <div class="banner">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-        blanditiis.
+    <div class="background">
+      <!-- banner section -->
+      <div class="banner-wrapper"></div>
+      <!-- end banner section -->
+
+      <!-- shop section -->
+      <div class="section-wrapper">
+        <div class="section-heading-wrapper">
+          <a href="http://" target="_blank">
+            <h1 class="section-heading">This is shop section</h1>
+          </a>
+        </div>
+        <div class="content-wrapper"></div>
       </div>
+      <!-- end shop section -->
+
+      <!-- recharge section -->
+      <div class="section-wrapper">
+        <div class="section-heading-wrapper">
+          <a href="http://" target="_blank">
+            <h1 class="section-heading">This is recharge section</h1>
+          </a>
+        </div>
+        <div class="content-wrapper"></div>
+      </div>
+      <!-- end recharge section -->
+
+      <!-- repair section -->
+      <div class="section-wrapper">
+        <div class="section-heading-wrapper">
+          <a href="http://" target="_blank">
+            <h1 class="section-heading">This is repair section</h1>
+          </a>
+        </div>
+        <div class="content-wrapper"></div>
+      </div>
+      <!-- end repair section -->
+
+      <!-- about us section -->
+      <div class="section-wrapper">
+        <div class="section-heading-wrapper">
+          <a href="http://" target="_blank">
+            <h1 class="section-heading">This is about us section</h1>
+          </a>
+        </div>
+        <div class="content-wrapper"></div>
+      </div>
+      <!-- end about us section -->
     </div>
-    <!-- end banner section -->
+
+    <!-- footer section -->
+    <div class="footer-wrapper">
+      <footer></footer>
+    </div>
+    <!-- end footer section -->
   </body>
 </html>
